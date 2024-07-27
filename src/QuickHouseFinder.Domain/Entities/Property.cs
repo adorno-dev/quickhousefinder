@@ -1,3 +1,5 @@
+using QuickHouseFinder.Domain.Enums;
+
 namespace QuickHouseFinder.Domain.Entities;
 
 public sealed class Property
@@ -16,8 +18,8 @@ public sealed class Property
     public int Area { get; set; }
     public int SquareMeters { get; set; }
 
-    public decimal? SellPrice { get; set; }
-    public decimal? RentPrice { get; set; }
+    public decimal? Price { get; set; }
+    public ContractType ContractType { get; set; }
 
     // 
 
